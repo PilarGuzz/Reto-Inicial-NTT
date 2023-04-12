@@ -2,7 +2,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-    url: jdbc:mysql://localhost/language?useSSL=false
+    url: jdbc:mysql://localhost:3306/language?useSSL=false
     password: ''
   jpa:
     database-platform: org.hibernate.dialect.MySQL5Dialect
