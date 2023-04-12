@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost/language?useSSL=false
+    password: ''
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: update
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+server:
+  port: '8082'
